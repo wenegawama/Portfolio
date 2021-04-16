@@ -5,72 +5,89 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"> 
+	
 </head>
 <body>
-	<nav>
-		<input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fas fa-bars"></i>
-		</label>
-        <div class="menu">
-            
-		<img src="img/minha_foto.jpg" alt="Imagem logo" class="logo">
-        <ul>
-            <li><a href="#apresentacao">Apresentação</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#experencia">Experência</a></li>
-            <li><a href="#projeto">Projetos</a></li>
-            <li><a href="#contato">Fale comigo</a></li>
-        </ul> 
-        </div>
-	</nav>
 
+    <header class="menu-bg">
+        <div class="menu">
+            <img src="img/minha_foto.jpg" alt="Imagem logo">
+        
+        
+            <nav class="menu-nav">		
+                <ul>
+                    <li><a href="#apresentacao">Apresentação</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experencia">Experência</a></li>
+                    <li><a href="#projeto">Projetos</a></li>
+                    <li><a href="#contato">Fale comigo</a></li>
+                </ul> 
+                <!--<img src="img/icon-hamburguer.png" alt="">-->
+            </nav>
+    </div>   
+    </header>
+	
 
     <section id="apresentacao">
 
         <div class="capa-de-perfil">
-            <img src="img/img10.jpg" alt="Imagem da capa de perfil" width="100%" height="67px">
+            <img src="img/img10.jpg" alt="Imagem da capa de perfil" height="310px" width="100%">
         </div>
 
-        <div class="apresentacao">
-            <div>
-                <img src="" alt="" class="imagem-principal">
-                <a href="">GITHUB</a>
-                <a href="">LINKEDIN</a>
-                <a href="">STACK OVERFLOW</a>
-            </div>
+      
+        <div class=info-imagem-apresentacao>
+            <div class="container">
+                <div  class="redes-socias">
+                    <img src="img/minha_foto.jpg" alt="" class="imagem-principal">
+                    <div class="icone">
+                        <a href="https://github.com/wenegawama"><img src="img/icon-github.png" alt="Icone github"></a>
+                        <a href="https://www.linkedin.com/in/wenega-wama-5201b61a2/"><img src="img/icon-linkedin.png" alt="Icone Linkedin"></a>
+                        <a href="https://pt.stackoverflow.com/users/205134/wenega"><img src="img/icon-stackoverflow.svg" alt="Icone Stackoverflow"></a>
+                    </div>
+                </div>
 
-            <div>
-                <h1>WENEGA WAMA</h1>
+                <div class="info">
+                    <h1>WENEGA WAMA</h1>
 
-                <h2>Full-Stack Developer</h2>
+                    <h2>Full-Stack Developer</h2>
 
-                <h3>Olá!</h3>
+                    <h3>Olá!</h3>
 
-                <p>Aqui irá entrar um breve texto de apresentação. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                    <p>Aqui irá entrar um breve texto de apresentação. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</p>
+                </div>
             </div>
         </div>
+       </div>
 
 
 
     </section>
 
-    <section class="formacao">
-        <h1>Formação</h1>
-        <div>
-            <p>2020-2020</p>
-            <p>Agente de Marketing Digital</p>
-            <p>SENAI SP</p>
+    <section id="formacao">
+       <div class="formacao-container">
+            <div class="formacao1">
+                <h1>Formação</h1>
+                <div>
+                    <p>2020-2020</p>
+                    <p>Agente de Marketing Digital</p>
+                    <p>SENAI SP</p>
+                </div>
+            </div>
+            <div class="formacao2">
+                <div>
+                    <p>2009-2013</p>
+                    <p>Bachalarel em Biologia e Fisiologia</p>
+                    <p>Universidade de Lomé</p>
+                </div>
         </div>
-        <div>
-            <p>2009-2013</p>
-            <p>Bachalarel em Biologia e Fisiologia</p>
-            <p>Universidade de Lomé</p>
-        </div>
+   
+       </div>
+            
     </section>
 
-    <section class="experencia">
+    <section id="experencia">
 
         <div>
             <p>2017-2020</p>
@@ -85,7 +102,7 @@
         </div>
 
     </section>
-    <section class="projeto">
+    <section id="projeto">
         <h1>Projetos</h1>
         <div class="card">
 
@@ -129,18 +146,21 @@
 
         <div class="formulário">
             <form action="" method="post">
-                <label>
+                <label></label>
                     NOME
-                    <input type="submit" value="nome" >
+                    <input type="submit" value="nome">
                 </label>
+
                 <label>
                     E-MAIL
-                    <input type="email" name="email" >
+                    <input type="email" name="email">
                 </label>
+
                 <label>
                     Assunto
-                    <input type="text" name="assunto" >
+                    <input type="text" name="assunto">
                 </label>
+
                 <label>
                     MENSAGEM
                     <textarea name="conteudo" cols="30" rows="10"></textarea>
