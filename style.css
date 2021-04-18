@@ -377,15 +377,8 @@ img {
 	.menu img {
 		margin-left: 15px;
 	}
-	.menu-nav {
-		display: none;
-	}
-	/*.menu-nav img {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-	} Aqui entra o icone hamburguer*/
+	
+	
 	.projeto-container {
 		max-width: 1048px;
 		margin: 0 auto;
@@ -396,4 +389,15 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
+}
+@media screen and (max-width:710px) and (min-width:320px) {
+	.menu-nav {
+		display: none;
+	}
+	/*.menu-nav img {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	} Aqui entra o icone hamburguer*/
 }
