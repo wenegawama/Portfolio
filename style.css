@@ -269,6 +269,7 @@ img {
     margin: 0 auto;
     padding:15px 0;
 	display: flex;
+	flex-wrap: wrap;
 }
 .contato {
 	width: 398px;
@@ -327,4 +328,72 @@ img {
 	background: #585858;
 	border-radius: 5px;
 	border: 0;
+}
+
+/*Responsividade*/
+/*Versão mobile*/
+@media screen and (max-width:320px){
+	.menu img {
+		margin-left: 15px;
+	}
+	.menu-nav {
+		display: none;
+	}
+	/*.menu-nav img {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	} Aqui entra o icone hamburguer*/
+	#apresentacao,#formacao,#experencia,#projeto,#contato {
+		flex-direction: column;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}	
+	/*.contato-container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-flow: wrap;
+	}
+	.contato {
+		width: 300px;
+	}
+	.input-formulario {
+		width: 200px;
+		margin-bottom: 5px;
+	}
+	.input-messagem-formulario {
+		width: 200px;
+		height: 100px;
+	}
+	.button {
+		margin-bottom: 10px;
+	}*/
+}
+/*Versão Tablet*/
+@media screen and (max-width:1048px) and (min-width:320px) {
+	.menu img {
+		margin-left: 15px;
+	}
+	.menu-nav {
+		display: none;
+	}
+	/*.menu-nav img {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	} Aqui entra o icone hamburguer*/
+	.projeto-container {
+		max-width: 1048px;
+		margin: 0 auto;
+		width: 865px;
+		height: 353px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
 }
