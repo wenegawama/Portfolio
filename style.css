@@ -194,6 +194,9 @@ img {
 	height: 518px;
 }
 #projeto h1 {
+		max-width: 1048px;
+		margin: 0 auto;
+		padding:15px 0;
 	margin: 34px 0px 36px 0px;
 	color: #707070;
 }
@@ -251,3 +254,77 @@ img {
 }
 
 /*Contato*/
+#contato {
+	background: #000000;
+	height: 609px;
+}
+
+#contato h1 {
+    max-width: 1048px;
+    margin: 0 auto;
+    padding:15px 0;
+}
+.contato-container {
+	max-width: 1048px;
+    margin: 0 auto;
+    padding:15px 0;
+	display: flex;
+}
+.contato {
+	width: 398px;
+	height: 200px;
+	margin: 43px 0px 55px 0px;
+}
+.icones-red-sociais {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 55px 207px 12px 0px;
+	
+}
+.icones-red-sociais img {
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	padding: 10px;
+}
+.links-redes-sociais {
+	display: flex;
+	flex-wrap: no-wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-size: xx-small;
+}
+.links-redes-sociais a {
+	width: 37px;
+	height: 11px;
+	padding: 20px;
+	margin: 0px 5px;
+	font-size: 8px;
+	font-weight: normal normal 600;
+	color: #707070;
+}
+.formulário {
+	width: 358px;
+}
+.input-formulario {
+	width: 398px;
+	height: 34px;
+	background: #FFFFFF;
+	border: 1px solid #707070;
+	border-radius: 4px;
+}
+.input-messagem-formulario {
+	width: 398px;
+	height: 133px;
+	background: #FFFFFF;
+	border: 1px solid #707070;
+	border-radius: 4px;
+}
+.button {
+	width: 122px;
+	height: 34px;
+	color: #fff;
+	background: #585858;
+	border-radius: 5px;
+	border: 0;
+}
