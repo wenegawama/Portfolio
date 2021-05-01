@@ -9,8 +9,7 @@ body, h1, h2, p, ul, li, a {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
-	
+    color: #fff;	
 }
 
 li {
@@ -40,6 +39,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+	
 }
 
 .menu img {
@@ -69,19 +69,28 @@ img {
 }
 
 /*Apresentação*/
-#apresentacao .info-imagem-apresentacao{
+#apresentacao {
+	background: #fff;
+}
+.container-info{
 	max-width: 1048px;
+	
     margin: 0 auto;
     padding:15px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-	height: 561.5px;
-	background: #FFFFFF;
+    justify-content: space-between;
+    align-items:flex-start;
+	
+	
 	color: black;
+	
+	
 }
-
+.redes-socias {
+	
+	
+}
 .redes-socias a img {
 	display: flex;
 	flex-wrap: nowrap;
@@ -91,6 +100,7 @@ img {
 	width: 183px;
 	height: 184px;
 	border-radius: 50%;
+	
 }
  .redes-socias a img {
 	/* background-image: url(img/icon-github.png) no-repeat; */
@@ -104,6 +114,7 @@ img {
 	width: 40px;
 	height: 41px;
 	border-radius: 50%;
+
 }
 .redes-socias a img {
 	background-image: url(img/icon-stackoverflow.svg) no-repeat;
@@ -112,44 +123,86 @@ img {
 	border-radius: 50%;
 }  
 
+
 #apresentacao .info-imagem-apresentacao .redes-socias .icone {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 }
-
-
-
-#apresentacao .info-imagem-apresentacao .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+.info {
+	width: 518px;
+	
+	
 }
+.info h1 {
+	width:422px;
+	color: black;
+	font-weight: bold;
+	opacity: 1;
+
+	
+	font: 'Montserrat', sans-serif;
+}
+.info h2 {
+	font-style: italic;
+	color: black;
+}
+.info p em {
+	font-weight: 700;
+}
+
+
+
 
 /*formacao*/
-
 #formacao {
 	background: #DEDEDE;
-	height: 353px;
-
 }
-
 .formacao-container {
-	max-width: 1048px;
-    margin: 0 auto;
-	flex-direction: column;
+	flex-direction:column;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+		
+	height: 353px;
+	max-width: 1048px;
+    margin: 0 auto;
 	color: black;
+	
+	flex-grow:2 2;
 }
-.formacao1  h1 {
+
+.formacao1 {
+	
+	display:inline-block;
+	margin-bottom: 10px;
+}
+/* .formacao1::before{
+	content:'';
+	width: 8px;
+	height: 66px;
+	background:red;
+	display:block;
+	border-radius: 50%;
+	
+} */
+
+/* .formacao2::before{
+	content:'';
+	width: 8px;
+	height: 66px;
+	background:red;
+	display:block;
+	border-radius: 50%;
+	
+} */
+#formacao  h1 {
 	margin: 34px 0px 36px 0px;
 	font-size: 300;
 	color: #707070;
+	
 }
 
 .formacao1 > div p:nth-of-type(1) {
@@ -171,8 +224,9 @@ img {
 
 /*Experência*/
 #experencia {
-	height: 353px;
+	
 	background: #434343;
+	
 }
 .container-experencia {
 	max-width: 1048px;
@@ -180,9 +234,19 @@ img {
 	flex-direction: column;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 353px;
+	color:#707070;
 }
+.container-experencia h1{
+	color:#707070;
+}
+.experencia-item1 {
+	
+	margin-bottom: 10px;
+}
+
 .container-experencia  h1 {
 	margin: 34px 0px 36px 0px;
 	font-size: 300;
@@ -192,23 +256,23 @@ img {
 #projeto {
 	background: #F2F2F2;
 	height: 518px;
+	
 }
 #projeto h1 {
-		max-width: 1048px;
-		margin: 0 auto;
-		padding:15px 0;
-	margin: 34px 0px 36px 0px;
-	color: #707070;
+	color:#707070;
+	max-width: 1048px;
+    margin: 0 auto;
+	margin-bottom: 34px;
 }
 .projeto-container {
 	max-width: 1048px;
     margin: 0 auto;
-	width: 865px;
-	height: 353px;
+	
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	
 }
 .card-projeto img {
 	width: 245px;
@@ -256,7 +320,8 @@ img {
 /*Contato*/
 #contato {
 	background: #000000;
-	height: 609px;
+	
+	
 }
 
 #contato h1 {
@@ -270,6 +335,7 @@ img {
     padding:15px 0;
 	display: flex;
 	flex-wrap: wrap;
+	height: 609px;
 }
 .contato {
 	width: 398px;
@@ -313,6 +379,7 @@ img {
 	background: #FFFFFF;
 	border: 1px solid #707070;
 	border-radius: 4px;
+	margin-bottom: 17px;
 }
 .input-messagem-formulario {
 	width: 398px;
@@ -328,16 +395,24 @@ img {
 	background: #585858;
 	border-radius: 5px;
 	border: 0;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+
 }
 
 /*Responsividade*/
 /*Versão mobile*/
-@media screen and (max-width:320px){
+@media (max-width:320px){
 	.menu img {
 		margin-left: 15px;
 	}
 	.menu-nav {
 		display: none;
+	}
+	.menu-bg {
+		width: 100vw;
+		background:red;
 	}
 	/*.menu-nav img {
 		display: flex;
