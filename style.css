@@ -370,8 +370,15 @@ img {
 	font-weight: normal normal 600;
 	color: #707070;
 }
+
+
+
+
 .formulário {
 	width: 358px;
+}
+label {
+	display:block;
 }
 .input-formulario {
 	width: 398px;
@@ -399,6 +406,10 @@ img {
 	margin: auto;
 	margin-top: 15px;
 
+}
+
+.invalido {
+	border: 3px solid red;
 }
 
 /*Responsividade*/
