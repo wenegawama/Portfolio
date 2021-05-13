@@ -1,27 +1,57 @@
 //Validação do formulario
-document.querySelector('form').addEventListener('submit', event => {
-    console.log('enviar o formulario')
+//document.addEventListener('DOMContentLoaded')
 
-    //não vai enviar o formulario
-    event.preventDefault()
+// document.querySelector('form').addEventListener('submit', event => {
+//     console.log('enviar o formulario')
+
+//     //não vai enviar o formulario
+//     //event.preventDefault()
+// })
+
+// const campos = document.querySelectorAll('[required]')
+// //console.log(campos)
+// function custumValidition(event){
+//     const campo = event.target
+//     console.log(campo.validity)
+
+//     //trocar messagem
+//     campo.setCustomValidity('Esse campo é obligatorio')
+// }
+
+// for(campo of campos){
+//     campo.addEventListener('invalido',custumValidation)
+// }
+
+//scroll suave
+//Identificar o clique no menu
+//verificar o item que foi clicado e fazer referencia com o alvo
+//verificar a distancia entre o alvo 
+//animar o scroll até o alvo
+
+
+const menuItems = document.querySelectorAll(".menu-nav a[href^='#']")
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnclick)
 })
 
-const campos = document.querySelectorAll('[required]')
-console.log(campos)
+function scrollToIdOnclick(event){
+    event.preventDefault()
+    const to = getScrollTopByHref(event.target) - 2
+    
+    scroolToPosition(to)
+}
 
-for(campo of campos){
-    campo.addEventListener('invalido',event => {
-        console.log('campo invalido')
+function scroolToPosition(to){
+    window.scroll({
+        top:to - 2,
+        behavior:"smooth",
     })
 }
 
-
-
-
-
-
-
-
+function getScrollTopByHref(element){
+    const id = element.getAttribute('href')
+    return document.querySelector(id).offsetTop
+ }
 
 
 
