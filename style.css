@@ -26,28 +26,64 @@ img {
 }
 
 /*Menu*/
-.menu-bg {
-	background: #3A3A3A;
-	height: 67px;
-	
-}
-
-.menu {
-    max-width: 1048px;
-    margin: 0 auto;
-    padding:15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-	
-}
 
 .menu img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 }
+#header{
+	display:flex;
+	align-items:center;
+	height:67px;
+	justify-content:space-between;
+	background: #3A3A3A;
+	padding:15px;
+}
+#menu{
+	display: flex;
+	gap:15px;
+	
+}
+#menu a {
+	padding:10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+#menu a:hover{
+	background:#DEDEDE;
+}
+#btn-mobile{
+	display: none;
+}
+
+@media(max-width: 813px){
+	#btn-mobile {
+		display:block;		
+	}
+	#menu{
+		display:none;		
+	}
+	#nav.active #menu {
+		display:flex;
+	}
+}
+
+/* .menu-bg {
+	
+	height: 67px;	
+}
+
+.menu {
+    
+    padding:15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;	
+}
+
+
 
 .menu-nav ul {
 	display: flex;
@@ -56,10 +92,14 @@ img {
 	align-items: center;
 }
 .menu a {
+	display: block;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px;
-}
+} */
+
+
+
 /*Imagem Capa*/
 
 #apresentacao .capa-de-perfil img {
@@ -74,24 +114,16 @@ img {
 	background: #fff;
 }
 .container-info{
-	max-width: 1048px;
-	
+	max-width: 1048px;	
     margin: 0 auto;
     padding:15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:flex-start;
-	
-	
-	color: black;
-	
-	
+    align-items:flex-start;	
+	color: black;	
 }
-.redes-socias {
-	
-	
-}
+
 .redes-socias a img {
 	display: flex;
 	flex-wrap: nowrap;
@@ -100,22 +132,19 @@ img {
 	background-image: url(img/minha_foto.jpg) no-repeat;
 	width: 183px;
 	height: 184px;
-	border-radius: 50%;
-	
+	border-radius: 50%;	
 }
  .redes-socias a img {
 	/* background-image: url(img/icon-github.png) no-repeat; */
 	width: 40px;
 	height: 41px;
 	border-radius: 50%;
-
 }
 .redes-socias a img {
 	background-image: url(img/icon-linkedin.png) no-repeat;
 	width: 40px;
 	height: 41px;
 	border-radius: 50%;
-
 }
 .redes-socias a img {
 	background-image: url(img/icon-stackoverflow.svg) no-repeat;
@@ -140,9 +169,7 @@ img {
 	width:422px;
 	color: black;
 	font-weight: bold;
-	opacity: 1;
-
-	
+	opacity: 1;	
 	font: 'Montserrat', sans-serif;
 }
 .info h2 {
@@ -152,9 +179,6 @@ img {
 .info p em {
 	font-weight: 700;
 }
-
-
-
 
 /*formacao*/
 #formacao {
@@ -171,7 +195,6 @@ img {
 	max-width: 1048px;
     margin: 0 auto;
 	color: black;
-	
 	flex-grow:2 2;
 }
 
@@ -371,10 +394,6 @@ img {
 	font-weight: normal normal 600;
 	color: #707070;
 }
-
-
-
-
 .formulário {
 	width: 358px;
 }
@@ -406,7 +425,7 @@ label {
 	display: block;
 	margin: auto;
 	margin-top: 15px;
-
+	cursor: pointer;
 }
 
 .invalido {
@@ -415,57 +434,35 @@ label {
 
 /*Responsividade*/
 /*Versão mobile*/
-@media (max-width:320px){
+/* @media (max-width:320px){
 	.menu img {
 		margin-left: 15px;
 	}
-	.menu-nav {
-		display: none;
-	}
+	
 	.menu-bg {
 		width: 100vw;
 		background:red;
-	}
+	} */
 	/*.menu-nav img {
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: center;
 	} Aqui entra o icone hamburguer*/
-	#apresentacao,#formacao,#experencia,#projeto,#contato {
+	/* #apresentacao,#formacao,#experencia,#projeto,#contato {
 		flex-direction: column;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		
 	}	
-	/*.contato-container {
-		display: flex;
-		flex-wrap: wrap;
-		flex-flow: wrap;
-	}
-	.contato {
-		width: 300px;
-	}
-	.input-formulario {
-		width: 200px;
-		margin-bottom: 5px;
-	}
-	.input-messagem-formulario {
-		width: 200px;
-		height: 100px;
-	}
-	.button {
-		margin-bottom: 10px;
-	}*/
-}
+	
+} */
 /*Versão Tablet*/
-@media screen and (max-width:1048px) and (min-width:320px) {
+/* @media(max-width:1048px) and (min-width:320px) {
 	.menu img {
 		margin-left: 15px;
-	}
-	
-	
+	}	
 	.projeto-container {
 		max-width: 1048px;
 		margin: 0 auto;
@@ -477,14 +474,5 @@ label {
 		align-items: center;
 	}
 }
-@media screen and (max-width:710px) and (min-width:320px) {
-	.menu-nav {
-		display: none;
-	}
-	/*.menu-nav img {
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		align-items: center;
-	} Aqui entra o icone hamburguer*/
-}
+ */
+

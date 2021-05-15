@@ -11,13 +11,14 @@
     </head>
     <body>
 
-        <header class="menu-bg">
-            <div class="menu">
+        <header class="menu-bg"  >
+            <div class="menu" id="header">
                 <img src="img/minha_foto.jpg" alt="Imagem logo">
             
             
-                <nav class="menu-nav">		
-                    <ul>
+                <nav  id="nav">	
+                    <button id="btn-mobile">Menu</button>	
+                    <ul id="menu">
                         <li><a href="#apresentacao">Apresentação</a></li>
                         <li><a href="#formacao">Formação</a></li>
                         <li><a href="#experencia">Experência</a></li>
@@ -25,7 +26,6 @@
                         <li><a href="#contato">Fale comigo</a></li>
                         <!--<li><a href="http:www.google.com">Login</a></li>-->
                     </ul> 
-                    <!--<img src="img/icon-hamburguer.png" alt="">-->
                 </nav>
         </div>   
         </header>
@@ -56,7 +56,7 @@
 
                         <h3>Olá!</h3>
 
-                        <p>Sou de nacionalidade togolesa morando no Brasil há quase 4 anos.Graduado em biologia,trabalhei como professor em cólegio de ensino médio durante 3 anos.No Brasil também já trabalhei num frigorifico.Hoje sou estudante da TOTI. Gosto de resolver problemas por meio da tecnologia.Trabalho com <em></em>REACT</em>,<em>TYPESCRIPT</em>,<em>MONGO DB</em> em equipe e com metodologias ágeis usando <em>GIT</em> e <em>SCRUM</em>. </p>
+                        <p>Sou de nacionalidade togolesa morando no Brasil há quase 4 anos.Graduado em biologia,trabalhei como professor em cólegio de ensino médio durante 3 anos.No Brasil também já trabalhei num frigorifico.Hoje sou estudante da TOTI. Gosto de resolver problemas por meio da tecnologia.Trabalho com <em>REACT</em>,<em>TYPESCRIPT</em>,<em>MONGO DB</em> em equipe e com metodologias ágeis usando <em>GIT</em> e <em>SCRUM</em>. </p>
                     </div>
                 </div>
             </div>
@@ -169,13 +169,17 @@
                         <label for="nome"> NOME </label>
                         <input type="text" nome="nome" id="nome" class="input-formulario" required>
                         <span class="erro"></span>     
+
                         <label for="email"> E-MAIL </label>    
                         <input type="email" name="email" id="email" class="input-formulario" required>
                         <span class="erro"></span> 
+
                         <label for="assunto">  Assunto  </label>
                         <input type="text" nome="assunto" id="assunto"  class="input-formulario" required>
+
                         <label for="mensagem">MENSAGEM</label>
                         <textarea name="mensagem" id="mensagem" class="input-messagem-formulario" required></textarea>
+
                     </form>
                     <span class="texto"></span>
                     <button type="submit" class="button">ENVIAR</button>
